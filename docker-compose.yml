@@ -1,0 +1,17 @@
+version: '3.13'
+
+services:
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev # Docker compose production is currently not functional
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_REACT_APP_API_URL=${VITE_REACT_APP_API_URL}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  default:
+    name: ai-commerce-network
