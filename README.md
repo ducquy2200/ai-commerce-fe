@@ -161,7 +161,7 @@ Create a `.env` file in the root directory:
 VITE_REACT_APP_API_URL=http://localhost:8000
 
 # WebSocket Configuration (optional, defaults to API URL)
-VITE_WS_URL=http://localhost:8000/ws
+VITE_REACT_APP_WS_URL=http://localhost:8000/ws
 ```
 
 ## Available Scripts
